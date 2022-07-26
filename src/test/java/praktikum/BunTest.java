@@ -11,12 +11,12 @@ public class BunTest {
     Bun bun = new Bun(bunName, bunPrice);
 
     @Test
-    public void getNameConstructorParamNotChangedTest() {
+    public void getNameReturnNotChangedConstructorValue() {
         assertEquals(bunName, bun.getName());
     }
 
     @Test
-    public void getPriceConstructorParamNotChangedTest() {
+    public void getPriceReturnNotChangedConstructorValue() {
         assertEquals(bunPrice, bun.getPrice(), 0.0F);
     }
 }

@@ -17,12 +17,12 @@ public class IngredientTest {
 
 
     @Test
-    public void getPrice() {
+    public void getPriceReturnNotChangedConstructorValue() {
         assertEquals(price, ingredient.getPrice(), 0.0F);
     }
 
     @Test
-    public void getName() {
+    public void getNameReturnNotChangedConstructorValue() {
         assertEquals(name, ingredient.getName());
     }
 
