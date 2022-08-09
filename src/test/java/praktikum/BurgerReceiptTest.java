@@ -24,7 +24,7 @@ public class BurgerReceiptTest {
         expectedString = eS;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = " Булки: {0} | Список ингредиентов: {1} | Ожидаемый чек: {2}")
     public static Object[][] getBurgerReceiptData() {
         return new Object[][]{
                 {new Bun("БУЛОЧКА", 1.5F), new ArrayList<>(List.of(new Ingredient(SAUCE, "СОУС", 2.0F)
