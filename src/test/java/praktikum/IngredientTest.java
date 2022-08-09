@@ -1,6 +1,5 @@
 package praktikum;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,11 +9,8 @@ public class IngredientTest {
 
     String name = "someName";
     float price = 123.83F;
-
     IngredientType ingredientType = FILLING;
-
     Ingredient ingredient = new Ingredient(ingredientType, name, price);
-
 
     @Test
     public void getPriceReturnNotChangedConstructorValue() {
@@ -37,4 +33,5 @@ public class IngredientTest {
         var ingredient = new Ingredient(ingredientType, name, price);
         assertEquals(ingredientType, ingredient.getType());
     }
+
 }

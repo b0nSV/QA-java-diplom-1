@@ -16,10 +16,8 @@ import static praktikum.IngredientType.*;
 public class BurgerTest {
 
     Burger burger = new Burger();
-
     @Mock
     Bun bun;
-
     @Mock
     Ingredient ingredient;
 
@@ -60,6 +58,7 @@ public class BurgerTest {
         burger.ingredients = new ArrayList<>(List.of(ingredient, ingredient, ingredient));
         Mockito.when(bun.getPrice()).thenReturn(10F);
         Mockito.when(ingredient.getPrice()).thenReturn(15F);
-        assertEquals(65F,burger.getPrice() , 0.0F);
+        assertEquals(65F, burger.getPrice(), 0.0F);
     }
+
 }

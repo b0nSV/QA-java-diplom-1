@@ -15,9 +15,7 @@ import static praktikum.IngredientType.SAUCE;
 public class BurgerReceiptTest {
 
     Bun bun;
-
     List<Ingredient> ingredients;
-
     String expectedString;
 
     public BurgerReceiptTest(Bun b, List<Ingredient> lI, String eS) {
@@ -57,7 +55,6 @@ public class BurgerReceiptTest {
                                 + "= filling Начинка =%n"
                                 + "(==== Булочка ====)%n"
                                 + "%nPrice: 10,550000%n")},
-
         };
     }
 
@@ -67,6 +64,6 @@ public class BurgerReceiptTest {
         burger.bun = bun;
         burger.ingredients = ingredients;
         assertEquals(expectedString, burger.getReceipt());
-
     }
+
 }
